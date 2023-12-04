@@ -16,10 +16,13 @@ llp = LLP()
 
 llp.linear_logical_transform(K, P, Q)
 
-print("Last Q:\n", llp.last_Q)
-print("Last P:\n", llp.last_P)
-
-print(llp.Ph)
+for i in range (len(llp.Qh)):
+    print(f"\t\tStep #{i + 1}")
+    print("P: ")
+    print(f"{llp.Ph[i]}")
+    print("Q: ")
+    print(f"{llp.Qh[i]}")
+    print("===================================")
 
 
 # Q1 = linear_logical_transform(K, P, Q, 1)

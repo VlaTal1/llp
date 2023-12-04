@@ -2,7 +2,6 @@ import numpy as np
 from pprint import pprint as pp
 
 
-
 class LLP:
     def __init__(self) -> None:
         self.i = 0
@@ -38,7 +37,9 @@ class LLP:
             self.last_P = new_P
 
             self.Ph.append(new_P)
-            if np.array_equal(P, new_P):
-                return new_P
-            else:
-                self.linear_logical_transform(K, new_P, Q)
+            self.linear_logical_transform(K, new_P, Q)
+            
+            # if np.array_equal(P, new_P):
+            #     return new_P
+            # else:
+            #     self.linear_logical_transform(K, new_P, Q)
