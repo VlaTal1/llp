@@ -2,6 +2,7 @@ import numpy as np
 from pprint import pprint as pp
 
 
+
 class LLP:
     def __init__(self) -> None:
         self.i = 0
